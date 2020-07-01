@@ -1,0 +1,30 @@
+{
+    "name": "antaresbr/stringhandler",
+    "description": "A custom PHP string handler based on Laravel's Illuminate/Support/Str class",
+    "homepage": "https://github.com/antaresbr/php-stringhandler",
+    "keywords": [
+        "php",
+        "string",
+        "handler"
+    ],
+    "authors": [
+        {
+            "name": "Eduardo Guerra",
+            "email": "eduardo.antares@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7",
+        "voku/portable-ascii": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Antares\\Support\\": "src/"
+        }
+    }
+}
