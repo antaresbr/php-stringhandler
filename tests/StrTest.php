@@ -86,6 +86,18 @@ final class StrTest extends TestCase
         $this->assertEquals(32, Str::length(Str::random(32)));
     }
 
+    public function testStr_replaceFirst_method()
+    {
+        $this->assertEquals('apple grape apple mango', Str::replaceFirst('mango', 'grape', 'apple mango apple mango'));
+        $this->assertEquals('apple  apple mango', Str::replaceFirst('mango', '', 'apple mango apple mango'));
+    }
+
+    public function testStr_replaceLast_method()
+    {
+        $this->assertEquals('apple mango apple grape', Str::replaceLast('mango', 'grape', 'apple mango apple mango'));
+        $this->assertEquals('apple mango apple ', Str::replaceLast('mango', '', 'apple mango apple mango'));
+    }
+
     public function testStr_scIn_method()
     {
         $this->assertFalse(Str::scIn('cherry', ...$this->list));
