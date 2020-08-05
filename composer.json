@@ -20,6 +20,9 @@
         "voku/portable-ascii": "*"
     },
     "autoload": {
+        "files": [
+            "support/helpers.php"
+        ],
         "psr-4": {
             "Antares\\Support\\": "src/"
         }
