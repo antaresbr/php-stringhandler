@@ -51,6 +51,17 @@ class Str
     }
 
     /**
+     * Case sensitive check if a target string is in a list of strings
+     * @param string $target Text to separate strings
+     * @param string $list,... unlimited strings to search in
+     * @return boolean The result
+     */
+    public static function csIn($target, $list)
+    {
+        return static::in(true, ...func_get_args());
+    }
+
+    /**
      * Insensitive case check if a target string is in a list of strings
      * @param string $target Text to separate strings
      * @param string $list,... unlimited strings to search in
