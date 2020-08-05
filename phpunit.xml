@@ -2,6 +2,7 @@
 <phpunit testdox="true" colors="true">
     <testsuites>
         <testsuite name="String handler">
+            <file>tests/SupportTest.php</file>
             <file>tests/StrTest.php</file>
         </testsuite>
     </testsuites>
